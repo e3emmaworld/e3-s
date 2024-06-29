@@ -8,6 +8,7 @@
     background-image: linear-gradient(greenyellow,red,black);
     padding: 30px;
     position: fixed;
+    zindex-fixed: 1030;
 }
 .nav-item button {
     background-image: linear-gradient(red,green);
