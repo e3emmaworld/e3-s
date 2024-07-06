@@ -1,4 +1,4 @@
-function startTime () {
+// function startTime () {
     const today = new Date();
     let h = today.getHours();
     let m = today.getMinutes();
@@ -8,19 +8,19 @@ function startTime () {
     document.getElementById("time").innerHTML = h + ":" +  m  + ":" + s;
     setTimeout(startTime, 1000);
 }
-function checkTime(i) {
+// function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
 }
 // mouseflash move light
-document.addEventListener('mousemove', function(e) {
+// document.addEventListener('mousemove', function(e) {
     const flashlight = document.getElementById('flashlight');
     flashlight.style.left = `${e.clientX - flashlight.offsetWidth / 1}px`;
     flashlight.style.top = `${e.clientY - flashlight.offsetHeight / 1}px`;
   });
 
   
-  document.getElementById('registrationForm').addEventListener('submit', function(event) {
+  // document.getElementById('registrationForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
 
     let isValid = true;
@@ -39,7 +39,7 @@ document.addEventListener('mousemove', function(e) {
     }
 
     // Validate email
-    const email = document.getElementById('email').value;
+    // const email = document.getElementById('email').value;
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     if (email === '') {
       document.getElementById('emailError').textContent = 'Email is required.';
@@ -50,7 +50,7 @@ document.addEventListener('mousemove', function(e) {
     }
 
     // Validate password
-    const password = document.getElementById('password').value;
+    // const password = document.getElementById('password').value;
     if (password === '') {
       document.getElementById('passwordError').textContent = 'Password is required.';
       isValid = false;
