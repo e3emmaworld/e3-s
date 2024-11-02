@@ -31,4 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(moveImage, 500); // Move the image every second
 });
+const word = "E3'S EMMAH'S WORLD";
+let currentText = "";
+let index = 0;
+
+function spellWord() {
+    if (index < word.length) {
+        currentText += word[index];  // Add one letter at a time
+        document.getElementById("output").textContent = currentText;
+        index++;
+        setTimeout(spellWord, 200); // Repeat every 500ms
+    }
+}
+
+spellWord(); // Start the process
 
