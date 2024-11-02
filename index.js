@@ -44,19 +44,5 @@ function spellWord() {
     }
 }
 
-spellWord(); // Start the process
-const word = "";Welcome to E3's Emmah's World Website
-let currentText = "";
-let index = 0;
 
-function spellWord() {
-    if (index < word.length) {
-        currentText += word[index];  // Add one letter at a time
-        document.getElementById("output").textContent = currentText;
-        index++;
-        setTimeout(spellWord, 200); // Repeat every 500ms
-    }
-}
-
-spellWord(); // Start the process
 
