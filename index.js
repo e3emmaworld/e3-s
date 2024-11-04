@@ -43,6 +43,6 @@ function spellWord() {
         setTimeout(spellWord, 200); // Repeat every 500ms
     }
 }
-
+spellWord(); // Start the process
 
 
