@@ -15,7 +15,7 @@ header {
 }
 
 #logo {
-    width: 70px;
+    width: 100px;
     height: auto;
     margin-right: 5px;
 }
@@ -122,3 +122,4 @@ button a {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
